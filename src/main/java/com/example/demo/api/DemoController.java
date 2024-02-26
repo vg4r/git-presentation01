@@ -14,10 +14,7 @@ public class DemoController {
 
     @GetMapping("/demo")
     public List<DemoDto> getAll(){
-        List<DemoDto>  list = new ArrayList<>();
-        list.add(new DemoDto());
-        // ....
-        return list;
+        return List.of(new DemoDto());
     }
 
 }
